@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-heritage.jpg";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-r from-heritage-earth/80 via-heritage-earth/60 to-transparent"></div>
       </div>
 
@@ -37,19 +34,12 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="bg-heritage-gold hover:bg-heritage-gold/90 text-heritage-earth font-semibold px-8 py-6 text-lg group"
-            >
+            <Button size="lg" className="bg-heritage-gold hover:bg-heritage-gold/90 text-heritage-earth font-semibold px-8 py-6 text-lg group">
               Explore Products
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-6 text-lg"
-            >
+            <Button size="lg" variant="outline" className="border-white/30 text-white backdrop-blur-sm px-8 py-6 text-lg bg-red-500 hover:bg-red-400">
               <Play className="mr-2 h-5 w-5" />
               Watch Our Story
             </Button>
@@ -75,6 +65,5 @@ export const HeroSection = () => {
 
       {/* Decorative Elements */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
