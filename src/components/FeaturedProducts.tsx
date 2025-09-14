@@ -6,7 +6,7 @@ const featuredProducts = [
   {
     id: 1,
     name: "Traditional Kiganda Basket",
-    price: "$45",
+    price: "UGX 165,000",
     region: "Central Uganda",
     artisan: "Mary Nakamura",
     image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=400&fit=crop",
@@ -16,7 +16,7 @@ const featuredProducts = [
   {
     id: 2,
     name: "Handwoven Gomesi Fabric",
-    price: "$120",
+    price: "UGX 440,000",
     region: "Buganda",
     artisan: "Sarah Nalwanga",
     image: "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop",
@@ -26,7 +26,7 @@ const featuredProducts = [
   {
     id: 3,
     name: "Clay Water Pot",
-    price: "$35",
+    price: "UGX 128,000",
     region: "Northern Uganda",
     artisan: "James Okello",
     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
@@ -36,7 +36,7 @@ const featuredProducts = [
   {
     id: 4,
     name: "Beaded Jewelry Set",
-    price: "$65",
+    price: "UGX 238,000",
     region: "Eastern Uganda",
     artisan: "Grace Akello",
     image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
