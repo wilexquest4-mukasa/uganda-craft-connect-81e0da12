@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        heritage: {
+          rust: "hsl(var(--heritage-rust))",
+          gold: "hsl(var(--heritage-gold))",
+          forest: "hsl(var(--heritage-forest))",
+          cream: "hsl(var(--heritage-cream))",
+          earth: "hsl(var(--heritage-earth))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
