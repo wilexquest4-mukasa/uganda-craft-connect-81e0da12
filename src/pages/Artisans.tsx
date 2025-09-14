@@ -1,7 +1,13 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Star, Award, Heart, MessageCircle } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { MapPin, Star, Award, Heart, MessageCircle, User, Mail, Phone, Camera } from "lucide-react";
+import { useState } from "react";
 
 const artisans = [
   {
@@ -205,6 +211,152 @@ const Artisans = () => {
               View All Artisans
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Artisan Registration Section */}
+      <section className="py-16 bg-gradient-to-b from-heritage-cream/30 to-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-heritage-earth mb-4">
+              Join Our Community of Artisans
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Share your craft with the world and connect with buyers who value authentic Ugandan artistry
+            </p>
+          </div>
+
+          <Card className="shadow-heritage border-0">
+            <CardContent className="p-8">
+              <Tabs defaultValue="signup" className="w-full">
+                <TabsList className="grid w-full grid-cols-2 mb-8">
+                  <TabsTrigger value="signup" className="text-lg py-3">Join as Artisan</TabsTrigger>
+                  <TabsTrigger value="login" className="text-lg py-3">Login</TabsTrigger>
+                </TabsList>
+                
+                <TabsContent value="signup">
+                  <Card className="border-0 shadow-none">
+                    <CardHeader className="text-center pb-4">
+                      <CardTitle className="text-2xl text-heritage-earth">Register as an Artisan</CardTitle>
+                      <p className="text-muted-foreground">Share your story and showcase your craft</p>
+                    </CardHeader>
+                    <CardContent className="space-y-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="firstName">First Name</Label>
+                          <Input id="firstName" placeholder="Enter your first name" />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="lastName">Last Name</Label>
+                          <Input id="lastName" placeholder="Enter your last name" />
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="email">Email Address</Label>
+                        <Input id="email" type="email" placeholder="your.email@example.com" />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="phone">Phone Number</Label>
+                        <Input id="phone" placeholder="+256 XXX XXX XXX" />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="speciality">Craft Speciality</Label>
+                        <Select>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select your primary craft" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="basketry">Traditional Basketry</SelectItem>
+                            <SelectItem value="pottery">Clay Pottery</SelectItem>
+                            <SelectItem value="beadwork">Beadwork & Jewelry</SelectItem>
+                            <SelectItem value="woodcarving">Wood Carving</SelectItem>
+                            <SelectItem value="textiles">Textile Weaving</SelectItem>
+                            <SelectItem value="matweaving">Mat Weaving</SelectItem>
+                            <SelectItem value="painting">Painting & Art</SelectItem>
+                            <SelectItem value="sculpture">Sculpture</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="region">Region</Label>
+                        <Select>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select your region" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="central">Central Uganda</SelectItem>
+                            <SelectItem value="eastern">Eastern Uganda</SelectItem>
+                            <SelectItem value="northern">Northern Uganda</SelectItem>
+                            <SelectItem value="western">Western Uganda</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="experience">Years of Experience</Label>
+                        <Input id="experience" placeholder="e.g. 10 years" />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="bio">Tell Your Story</Label>
+                        <Textarea 
+                          id="bio" 
+                          placeholder="Share your journey as an artisan, your techniques, and what makes your craft special..."
+                          className="min-h-24"
+                        />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="password">Password</Label>
+                        <Input id="password" type="password" placeholder="Create a secure password" />
+                      </div>
+                      
+                      <Button className="w-full bg-heritage-rust hover:bg-heritage-rust/90 text-white py-3 text-lg">
+                        <User className="mr-2 h-5 w-5" />
+                        Register as Artisan
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+                
+                <TabsContent value="login">
+                  <Card className="border-0 shadow-none">
+                    <CardHeader className="text-center pb-4">
+                      <CardTitle className="text-2xl text-heritage-earth">Welcome Back</CardTitle>
+                      <p className="text-muted-foreground">Continue your artisan journey</p>
+                    </CardHeader>
+                    <CardContent className="space-y-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="loginEmail">Email Address</Label>
+                        <Input id="loginEmail" type="email" placeholder="your.email@example.com" />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="loginPassword">Password</Label>
+                        <Input id="loginPassword" type="password" placeholder="Enter your password" />
+                      </div>
+                      
+                      <Button className="w-full bg-heritage-rust hover:bg-heritage-rust/90 text-white py-3 text-lg">
+                        <Mail className="mr-2 h-5 w-5" />
+                        Sign In
+                      </Button>
+                      
+                      <div className="text-center">
+                        <Button variant="link" className="text-heritage-rust hover:text-heritage-rust/80">
+                          Forgot your password?
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+              </Tabs>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </div>
