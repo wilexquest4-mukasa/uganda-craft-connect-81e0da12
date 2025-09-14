@@ -2,65 +2,57 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Users, Package, Star } from "lucide-react";
-
-const regions = [
-  {
-    id: 1,
-    name: "Central Uganda",
-    description: "Home to the historic Buganda kingdom, known for traditional basketry, barkcloth, and royal crafts",
-    image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&h=400&fit=crop",
-    artisansCount: 127,
-    productsCount: 584,
-    rating: 4.8,
-    specialties: ["Basketry", "Barkcloth", "Royal Crafts", "Pottery"],
-    featured: true,
-    keyArtisans: ["Mary Nakamura", "Sarah Nalwanga"],
-    culturalSites: ["Buganda Palace", "Kasubi Tombs"]
-  },
-  {
-    id: 2,
-    name: "Northern Uganda",
-    description: "Rich in pottery traditions and ceremonial crafts, with unique clay techniques passed down for generations",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
-    artisansCount: 89,
-    productsCount: 342,
-    rating: 4.7,
-    specialties: ["Clay Pottery", "Ceremonial Items", "Traditional Drums", "Metalwork"],
-    featured: false,
-    keyArtisans: ["James Okello", "David Opio"],
-    culturalSites: ["Gulu Cultural Center", "Acholi Cultural Museum"]
-  },
-  {
-    id: 3,
-    name: "Eastern Uganda",
-    description: "Famous for vibrant beadwork, jewelry, and textile traditions from diverse ethnic communities",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=400&fit=crop",
-    artisansCount: 156,
-    productsCount: 723,
-    rating: 4.9,
-    specialties: ["Beadwork", "Jewelry", "Mat Weaving", "Textiles"],
-    featured: true,
-    keyArtisans: ["Grace Akello", "Rose Acheng"],
-    culturalSites: ["Mount Elgon Cultural Site", "Mbale Cultural Center"]
-  },
-  {
-    id: 4,
-    name: "Western Uganda",
-    description: "Renowned for wood carving, sculptures, and traditional musical instruments from forest communities",
-    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&h=400&fit=crop",
-    artisansCount: 93,
-    productsCount: 427,
-    rating: 4.6,
-    specialties: ["Wood Carving", "Sculptures", "Musical Instruments", "Masks"],
-    featured: false,
-    keyArtisans: ["Peter Musoke", "John Byaruhanga"],
-    culturalSites: ["Bwindi Cultural Center", "Ankole Cultural Museum"]
-  }
-];
-
+const regions = [{
+  id: 1,
+  name: "Central Uganda",
+  description: "Home to the historic Buganda kingdom, known for traditional basketry, barkcloth, and royal crafts",
+  image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&h=400&fit=crop",
+  artisansCount: 127,
+  productsCount: 584,
+  rating: 4.8,
+  specialties: ["Basketry", "Barkcloth", "Royal Crafts", "Pottery"],
+  featured: true,
+  keyArtisans: ["Mary Nakamura", "Sarah Nalwanga"],
+  culturalSites: ["Buganda Palace", "Kasubi Tombs"]
+}, {
+  id: 2,
+  name: "Northern Uganda",
+  description: "Rich in pottery traditions and ceremonial crafts, with unique clay techniques passed down for generations",
+  image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+  artisansCount: 89,
+  productsCount: 342,
+  rating: 4.7,
+  specialties: ["Clay Pottery", "Ceremonial Items", "Traditional Drums", "Metalwork"],
+  featured: false,
+  keyArtisans: ["James Okello", "David Opio"],
+  culturalSites: ["Gulu Cultural Center", "Acholi Cultural Museum"]
+}, {
+  id: 3,
+  name: "Eastern Uganda",
+  description: "Famous for vibrant beadwork, jewelry, and textile traditions from diverse ethnic communities",
+  image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=400&fit=crop",
+  artisansCount: 156,
+  productsCount: 723,
+  rating: 4.9,
+  specialties: ["Beadwork", "Jewelry", "Mat Weaving", "Textiles"],
+  featured: true,
+  keyArtisans: ["Grace Akello", "Rose Acheng"],
+  culturalSites: ["Mount Elgon Cultural Site", "Mbale Cultural Center"]
+}, {
+  id: 4,
+  name: "Western Uganda",
+  description: "Renowned for wood carving, sculptures, and traditional musical instruments from forest communities",
+  image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&h=400&fit=crop",
+  artisansCount: 93,
+  productsCount: 427,
+  rating: 4.6,
+  specialties: ["Wood Carving", "Sculptures", "Musical Instruments", "Masks"],
+  featured: false,
+  keyArtisans: ["Peter Musoke", "John Byaruhanga"],
+  culturalSites: ["Bwindi Cultural Center", "Ankole Cultural Museum"]
+}];
 const Regions = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-heritage-forest via-heritage-rust to-heritage-gold text-white">
         <div className="container mx-auto px-4 text-center">
@@ -76,7 +68,7 @@ const Regions = () => {
               <MapPin className="mr-2 h-5 w-5" />
               Interactive Map
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white text-white bg-teal-900 hover:bg-teal-800">
               Cultural Tours
             </Button>
           </div>
@@ -96,22 +88,15 @@ const Regions = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {regions.map((region) => (
-              <Card key={region.id} className={`group overflow-hidden border-0 shadow-soft hover:shadow-heritage transition-all duration-300 hover:-translate-y-1 ${region.featured ? 'ring-2 ring-heritage-gold' : ''}`}>
+            {regions.map(region => <Card key={region.id} className={`group overflow-hidden border-0 shadow-soft hover:shadow-heritage transition-all duration-300 hover:-translate-y-1 ${region.featured ? 'ring-2 ring-heritage-gold' : ''}`}>
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src={region.image}
-                    alt={region.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src={region.image} alt={region.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   
                   <div className="absolute top-4 left-4 flex gap-2">
-                    {region.featured && (
-                      <Badge className="bg-heritage-gold text-heritage-earth">
+                    {region.featured && <Badge className="bg-heritage-gold text-heritage-earth">
                         Featured Region
-                      </Badge>
-                    )}
+                      </Badge>}
                   </div>
 
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -146,11 +131,9 @@ const Regions = () => {
                   <div className="mb-4">
                     <h4 className="font-semibold text-heritage-earth mb-2">Specialties</h4>
                     <div className="flex flex-wrap gap-1">
-                      {region.specialties.map((specialty) => (
-                        <Badge key={specialty} variant="secondary" className="text-xs">
+                      {region.specialties.map(specialty => <Badge key={specialty} variant="secondary" className="text-xs">
                           {specialty}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                   </div>
 
@@ -177,13 +160,10 @@ const Regions = () => {
                     </Button>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Regions;
