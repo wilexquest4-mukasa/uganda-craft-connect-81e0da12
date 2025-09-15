@@ -9,7 +9,7 @@ const featuredProducts = [
     price: "UGX 165,000",
     region: "Central Uganda",
     artisan: "Mary Nakamura",
-    image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=400&fit=crop",
     rating: 4.9,
     category: "Basketry"
   },
@@ -19,7 +19,7 @@ const featuredProducts = [
     price: "UGX 440,000",
     region: "Buganda",
     artisan: "Sarah Nalwanga",
-    image: "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594736797933-d0901ba2fe65?w=400&h=400&fit=crop",
     rating: 5.0,
     category: "Textiles"
   },
@@ -29,7 +29,7 @@ const featuredProducts = [
     price: "UGX 128,000",
     region: "Northern Uganda",
     artisan: "James Okello",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=400&fit=crop",
     rating: 4.8,
     category: "Pottery"
   },
@@ -39,7 +39,7 @@ const featuredProducts = [
     price: "UGX 238,000",
     region: "Eastern Uganda",
     artisan: "Grace Akello",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=400&fit=crop",
     rating: 4.7,
     category: "Jewelry"
   }

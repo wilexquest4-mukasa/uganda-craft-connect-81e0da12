@@ -12,7 +12,7 @@ const products = [
     price: "UGX 165,000",
     region: "Central Uganda",
     artisan: "Mary Nakamura",
-    image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=400&fit=crop",
     rating: 4.9,
     category: "Basketry"
   },
@@ -22,7 +22,7 @@ const products = [
     price: "UGX 440,000",
     region: "Buganda",
     artisan: "Sarah Nalwanga",
-    image: "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594736797933-d0901ba2fe65?w=400&h=400&fit=crop",
     rating: 5.0,
     category: "Textiles"
   },
@@ -32,7 +32,7 @@ const products = [
     price: "UGX 128,000",
     region: "Northern Uganda",
     artisan: "James Okello",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=400&fit=crop",
     rating: 4.8,
     category: "Pottery"
   },
@@ -42,7 +42,7 @@ const products = [
     price: "UGX 238,000",
     region: "Eastern Uganda",
     artisan: "Grace Akello",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=400&fit=crop",
     rating: 4.7,
     category: "Jewelry"
   },
@@ -52,7 +52,7 @@ const products = [
     price: "UGX 312,000",
     region: "Western Uganda",
     artisan: "Peter Musoke",
-    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1578632292107-d0ed637c8816?w=400&h=400&fit=crop",
     rating: 4.6,
     category: "Wood Carving"
   },
@@ -62,7 +62,7 @@ const products = [
     price: "UGX 103,000",
     region: "Eastern Uganda",
     artisan: "Rose Acheng",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=400&fit=crop",
     rating: 4.5,
     category: "Weaving"
   }
