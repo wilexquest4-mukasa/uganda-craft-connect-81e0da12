@@ -79,7 +79,7 @@ const Heritage = () => {
               <BookOpen className="mr-2 h-5 w-5" />
               Browse Stories
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white text-base text-justify bg-teal-700 hover:bg-teal-600">
+            <Button size="lg" variant="outline" className="border-white text-white text-base text-justify bg-teal-700 hover:bg-teal-600 mx-0">
               Featured Products
             </Button>
           </div>
