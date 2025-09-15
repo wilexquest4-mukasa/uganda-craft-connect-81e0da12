@@ -49,15 +49,15 @@ export const HeroSection = () => {
           <div className="mt-12 grid grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-heritage-gold">500+</div>
-              <div className="text-white/80 text-sm md:text-base">Artisans</div>
+              <div className="text-white/80 text-sm md:text-base bg-zinc-400">Artisans</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-heritage-gold">50+</div>
-              <div className="text-white/80 text-sm md:text-base">Regions</div>
+              <div className="text-white/80 text-sm md:text-base bg-zinc-400">Regions</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-heritage-gold">5000+</div>
-              <div className="text-white/80 text-sm md:text-base">Products</div>
+              <div className="text-white/80 text-sm md:text-base bg-zinc-400">Products</div>
             </div>
           </div>
         </div>
