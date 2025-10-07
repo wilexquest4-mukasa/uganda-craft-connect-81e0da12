@@ -8,6 +8,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MapPin, Star, Award, Heart, MessageCircle, User, Mail, Phone, Camera } from "lucide-react";
 import { useState } from "react";
+import artisanMary from "@/assets/artisan-mary.jpg";
+import artisanJames from "@/assets/artisan-james.jpg";
+import artisanGrace from "@/assets/artisan-grace.jpg";
+import artisanPeter from "@/assets/artisan-peter.jpg";
+import artisanSarah from "@/assets/artisan-sarah.jpg";
+import artisanRose from "@/assets/artisan-rose.jpg";
 
 const artisans = [
   {
@@ -18,7 +24,7 @@ const artisans = [
     experience: "25 years",
     rating: 4.9,
     totalSales: 234,
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face",
+    image: artisanMary,
     bio: "Master basket weaver specializing in traditional Kiganda patterns passed down through five generations.",
     skills: ["Basket Weaving", "Natural Dyes", "Traditional Patterns"],
     featured: true,
@@ -32,7 +38,7 @@ const artisans = [
     experience: "18 years",
     rating: 4.8,
     totalSales: 189,
-    image: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=300&h=300&fit=crop&crop=face",
+    image: artisanJames,
     bio: "Traditional potter creating functional and ceremonial vessels using ancient techniques and local clay.",
     skills: ["Clay Molding", "Kiln Firing", "Decorative Glazing"],
     featured: false,
@@ -46,7 +52,7 @@ const artisans = [
     experience: "12 years",
     rating: 4.7,
     totalSales: 156,
-    image: "https://images.unsplash.com/photo-1594736797933-d0a3ba9e8bb2?w=300&h=300&fit=crop&crop=face",
+    image: artisanGrace,
     bio: "Contemporary jewelry artist blending traditional beadwork techniques with modern designs.",
     skills: ["Bead Threading", "Color Coordination", "Wire Work"],
     featured: true,
@@ -60,7 +66,7 @@ const artisans = [
     experience: "30 years",
     rating: 4.9,
     totalSales: 287,
-    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=300&fit=crop&crop=face",
+    image: artisanPeter,
     bio: "Master wood carver creating sculptures and functional art pieces from indigenous Ugandan timber.",
     skills: ["Wood Carving", "Tool Making", "Finishing Techniques"],
     featured: true,
@@ -74,7 +80,7 @@ const artisans = [
     experience: "22 years",
     rating: 5.0,
     totalSales: 298,
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop&crop=face",
+    image: artisanSarah,
     bio: "Expert weaver specializing in traditional Gomesi fabric and contemporary textile innovations.",
     skills: ["Loom Weaving", "Pattern Design", "Natural Dyeing"],
     featured: true,
@@ -88,7 +94,7 @@ const artisans = [
     experience: "15 years",
     rating: 4.6,
     totalSales: 134,
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face",
+    image: artisanRose,
     bio: "Traditional mat weaver creating beautiful floor coverings and decorative pieces using local reeds.",
     skills: ["Reed Preparation", "Pattern Weaving", "Edge Finishing"],
     featured: false,
