@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, User } from "lucide-react";
 import ugandanPot from "@/assets/ugandan-pot.jpg";
+import ugandanBaskets from "@/assets/ugandan-baskets.jpg";
+import ugandanBeadwork from "@/assets/ugandan-beadwork.jpg";
 
 const culturalStories = [
   {
@@ -18,7 +20,7 @@ const culturalStories = [
     id: 2,
     title: "Weaving Stories: The Kiganda Basket Legacy",
     excerpt: "Explore the intricate patterns and symbolic meanings behind traditional basket weaving in Central Uganda's Buganda kingdom.",
-    image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=600&h=400&fit=crop",
+    image: ugandanBaskets,
     region: "Central Uganda",
     date: "2024-01-20",
     author: "Sarah Mukasa",
@@ -28,7 +30,7 @@ const culturalStories = [
     id: 3,
     title: "Beadwork: Colors of Community and Identity",
     excerpt: "The vibrant world of Ugandan beadwork tells stories of community, celebration, and cultural identity through intricate designs.",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=400&fit=crop",
+    image: ugandanBeadwork,
     region: "Eastern Uganda",
     date: "2024-01-25",
     author: "Grace Namuli",
