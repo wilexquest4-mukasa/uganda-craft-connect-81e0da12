@@ -1,10 +1,24 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, User, Menu, Search } from "lucide-react";
 import { useState } from "react";
+import { toast } from "sonner";
 export const Navigation = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleSearch = () => {
+    toast.info("Search feature coming soon!");
+  };
+
+  const handleCart = () => {
+    toast.info("Shopping cart feature coming soon!");
+  };
+
+  const handleProfile = () => {
+    navigate("/dashboard");
+  };
   const navItems = [{
     name: "Home",
     path: "/"
@@ -44,13 +58,13 @@ export const Navigation = () => {
 
           {/* Actions */}
           <div className="flex items-center space-x-2">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={handleSearch}>
               <Search className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={handleCart}>
               <ShoppingBag className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={handleProfile}>
               <User className="h-4 w-4" />
             </Button>
             
