@@ -1,13 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, User } from "lucide-react";
+import ugandanPot from "@/assets/ugandan-pot.jpg";
 
 const culturalStories = [
   {
     id: 1,
     title: "The Art of Traditional Pottery in Northern Uganda",
     excerpt: "Discover how clay vessels have been shaped by generations of skilled potters, preserving ancient techniques passed down through families.",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+    image: ugandanPot,
     region: "Northern Uganda",
     date: "2024-01-15",
     author: "Cultural Heritage Team",
