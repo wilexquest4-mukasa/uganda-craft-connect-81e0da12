@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Heart, ShoppingCart } from "lucide-react";
+import ugandanBasket from "@/assets/ugandan-basket.jpg";
+import gomesiFabric from "@/assets/gomesi-fabric.jpg";
+import ugandanPot from "@/assets/ugandan-pot.jpg";
+import ugandanBeads from "@/assets/ugandan-beads.jpg";
 
 const featuredProducts = [
   {
@@ -9,7 +13,7 @@ const featuredProducts = [
     price: "UGX 165,000",
     region: "Central Uganda",
     artisan: "Mary Nakamura",
-    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=400&fit=crop",
+    image: ugandanBasket,
     rating: 4.9,
     category: "Basketry"
   },
@@ -19,7 +23,7 @@ const featuredProducts = [
     price: "UGX 440,000",
     region: "Buganda",
     artisan: "Sarah Nalwanga",
-    image: "https://images.unsplash.com/photo-1594736797933-d0901ba2fe65?w=400&h=400&fit=crop",
+    image: gomesiFabric,
     rating: 5.0,
     category: "Textiles"
   },
@@ -29,7 +33,7 @@ const featuredProducts = [
     price: "UGX 128,000",
     region: "Northern Uganda",
     artisan: "James Okello",
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=400&fit=crop",
+    image: ugandanPot,
     rating: 4.8,
     category: "Pottery"
   },
@@ -39,7 +43,7 @@ const featuredProducts = [
     price: "UGX 238,000",
     region: "Eastern Uganda",
     artisan: "Grace Akello",
-    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=400&fit=crop",
+    image: ugandanBeads,
     rating: 4.7,
     category: "Jewelry"
   }

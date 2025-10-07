@@ -4,6 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Filter, Heart, ShoppingCart, Star } from "lucide-react";
 import { useState } from "react";
+import ugandanBasket from "@/assets/ugandan-basket.jpg";
+import gomesiFabric from "@/assets/gomesi-fabric.jpg";
+import ugandanPot from "@/assets/ugandan-pot.jpg";
+import ugandanBeads from "@/assets/ugandan-beads.jpg";
+import ugandanCarving from "@/assets/ugandan-carving.jpg";
+import ugandanMat from "@/assets/ugandan-mat.jpg";
 
 const products = [
   {
@@ -12,7 +18,7 @@ const products = [
     price: "UGX 165,000",
     region: "Central Uganda",
     artisan: "Mary Nakamura",
-    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=400&fit=crop",
+    image: ugandanBasket,
     rating: 4.9,
     category: "Basketry"
   },
@@ -22,7 +28,7 @@ const products = [
     price: "UGX 440,000",
     region: "Buganda",
     artisan: "Sarah Nalwanga",
-    image: "https://images.unsplash.com/photo-1594736797933-d0901ba2fe65?w=400&h=400&fit=crop",
+    image: gomesiFabric,
     rating: 5.0,
     category: "Textiles"
   },
@@ -32,7 +38,7 @@ const products = [
     price: "UGX 128,000",
     region: "Northern Uganda",
     artisan: "James Okello",
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=400&fit=crop",
+    image: ugandanPot,
     rating: 4.8,
     category: "Pottery"
   },
@@ -42,7 +48,7 @@ const products = [
     price: "UGX 238,000",
     region: "Eastern Uganda",
     artisan: "Grace Akello",
-    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=400&fit=crop",
+    image: ugandanBeads,
     rating: 4.7,
     category: "Jewelry"
   },
@@ -52,7 +58,7 @@ const products = [
     price: "UGX 312,000",
     region: "Western Uganda",
     artisan: "Peter Musoke",
-    image: "https://images.unsplash.com/photo-1578632292107-d0ed637c8816?w=400&h=400&fit=crop",
+    image: ugandanCarving,
     rating: 4.6,
     category: "Wood Carving"
   },
@@ -62,7 +68,7 @@ const products = [
     price: "UGX 103,000",
     region: "Eastern Uganda",
     artisan: "Rose Acheng",
-    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=400&fit=crop",
+    image: ugandanMat,
     rating: 4.5,
     category: "Weaving"
   }
