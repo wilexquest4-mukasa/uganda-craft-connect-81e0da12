@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, User, BookOpen, Clock } from "lucide-react";
+import ugandanBaskets from "@/assets/ugandan-baskets.jpg";
 const heritageStories = [{
   id: 1,
   title: "The Art of Traditional Pottery in Northern Uganda",
@@ -15,7 +16,7 @@ const heritageStories = [{
   id: 2,
   title: "Weaving Stories: The Kiganda Basket Legacy",
   excerpt: "Explore the intricate patterns and symbolic meanings behind traditional basket weaving in Central Uganda's Buganda kingdom.",
-  image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=600&h=400&fit=crop",
+  image: ugandanBaskets,
   region: "Central Uganda",
   date: "2024-01-20",
   author: "Sarah Mukasa",
