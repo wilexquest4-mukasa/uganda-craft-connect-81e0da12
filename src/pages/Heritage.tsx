@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, User, BookOpen, Clock } from "lucide-react";
 import ugandanBaskets from "@/assets/ugandan-baskets.jpg";
+import ugandanDrums from "@/assets/ugandan-drums.jpg";
 const heritageStories = [{
   id: 1,
   title: "The Art of Traditional Pottery in Northern Uganda",
@@ -56,7 +57,7 @@ const heritageStories = [{
   id: 6,
   title: "Musical Instruments: Sounds of Heritage",
   excerpt: "Traditional drums, harps, and flutes that have echoed through Uganda's cultural ceremonies for centuries.",
-  image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
+  image: ugandanDrums,
   region: "All Regions",
   date: "2024-02-10",
   author: "Moses Kigongo",
