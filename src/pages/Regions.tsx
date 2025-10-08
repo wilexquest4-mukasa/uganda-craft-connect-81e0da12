@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Users, Package, Star } from "lucide-react";
+import riverNile from "@/assets/river-nile.jpg";
 const regions = [{
   id: 1,
   name: "Central Uganda",
@@ -18,7 +19,7 @@ const regions = [{
   id: 2,
   name: "Northern Uganda",
   description: "Rich in pottery traditions and ceremonial crafts, with unique clay techniques passed down for generations",
-  image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+  image: riverNile,
   artisansCount: 89,
   productsCount: 342,
   rating: 4.7,
