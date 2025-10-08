@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, User, BookOpen, Clock } from "lucide-react";
 import ugandanBaskets from "@/assets/ugandan-baskets.jpg";
 import ugandanDrums from "@/assets/ugandan-drums.jpg";
+import ugandanCarving from "@/assets/ugandan-carving.jpg";
 const heritageStories = [{
   id: 1,
   title: "The Art of Traditional Pottery in Northern Uganda",
@@ -47,7 +48,7 @@ const heritageStories = [{
   id: 5,
   title: "Wood Carving: Stories in Timber",
   excerpt: "Master craftsmen reveal the spiritual and cultural significance behind traditional Ugandan wood sculptures.",
-  image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&h=400&fit=crop",
+  image: ugandanCarving,
   region: "Western Uganda",
   date: "2024-02-05",
   author: "Peter Musoke",
