@@ -4,11 +4,12 @@ import { Calendar, MapPin, User, BookOpen, Clock } from "lucide-react";
 import ugandanBaskets from "@/assets/ugandan-baskets.jpg";
 import ugandanDrums from "@/assets/ugandan-drums.jpg";
 import ugandanCarving from "@/assets/ugandan-carving.jpg";
+import ugandanPot from "@/assets/ugandan-pot.jpg";
 const heritageStories = [{
   id: 1,
   title: "The Art of Traditional Pottery in Northern Uganda",
   excerpt: "Discover how clay vessels have been shaped by generations of skilled potters, preserving ancient techniques passed down through families for over 500 years.",
-  image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+  image: ugandanPot,
   region: "Northern Uganda",
   date: "2024-01-15",
   author: "Cultural Heritage Team",
